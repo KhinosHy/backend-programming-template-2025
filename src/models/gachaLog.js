@@ -14,7 +14,7 @@ const gachaLogSchema = new mongoose.Schema(
     },
     prize: {
       type: String,
-      default: null, // null = tidak menang hadiah
+      default: null, 
     },
     gachaAt: {
       type: Date,

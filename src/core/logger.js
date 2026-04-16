@@ -1,6 +1,5 @@
 const pino = require('pino');
 
-// Print the log to STDOUT with colors and formatting for easier read
 const pinoPretty = {
   target: 'pino-pretty',
   options: {
@@ -15,7 +14,7 @@ module.exports = (appName) =>
     {
       name: appName,
       formatters: {
-        // Specify the level name instead of its integer value.
+
         level: (label) => ({
           level: label.toUpperCase(),
         }),

@@ -1,7 +1,6 @@
 const gachaService = require('./gachaService');
 
-// POST /gacha
-// Body: { userId, userName }
+
 const doGacha = async (req, res) => {
   const { userId, userName } = req.body;
 
