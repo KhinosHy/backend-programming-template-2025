@@ -1,13 +1,10 @@
 const express = require('express');
-
-const books = require('./components/books/books-route');
-const users = require('./components/users/users-route');
+const gachaRoutes = require('./components/gacha/gachaRoutes');
 
 module.exports = () => {
-  const app = express.Router();
+  const router = express.Router();
 
-  books(app);
-  users(app);
+  router.use('/gacha', gachaRoutes);
 
-  return app;
+  return router;
 };
